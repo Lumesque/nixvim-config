@@ -42,7 +42,9 @@
             # Lets you run `nix run .` to start nixvim
             default = nvim;
           };
-          homeConfiguration = import ./modules/hm.nix {neovim-package=nvim;};
+          homeConfiguration = {
+            default = import ./modules/hm.nix {neovim-package=nvim;};
+          };
         };
     };
 }
