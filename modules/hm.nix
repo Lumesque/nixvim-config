@@ -4,9 +4,9 @@
 with lib;
 
 let
-  cfg = config.programs.nixvim;
+  cfg = config.programs.completed-nixvim;
 in {
-  options.programs.nixvim = {
+  options.programs.completed-nixvim = {
     enable = mkEnableOption "Enable this neovim configuration";
     defaultEditor = mkEnableOption "Enable neovim as the default editor";
     config = mkOption {
