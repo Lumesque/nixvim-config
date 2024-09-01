@@ -20,6 +20,14 @@
 
     servers = {
       lua-ls.enable = true;
+      bashls.enable = true;
+      gopls.enable = true;
+      rust-analyzer = {
+        enable = true;
+        installRustc = false;
+        installCargo = false;
+      };
+      zls.enable = true;
       pylsp = {
         enable = true;
         settings.plugins.flake8.enabled = true;
