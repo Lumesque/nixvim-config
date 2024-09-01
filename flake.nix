@@ -43,7 +43,7 @@
             default = nvim;
           };
           homeConfiguration = {
-            default = import ./modules/hm.nix {neovim-package=nvim;};
+            default = import ./modules/hm.nix;
           };
         };
     };
