@@ -1,0 +1,7 @@
+on: [push, pull_request]
+name: Check All Plugins Used/Commented
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: ./_checks/plugins_used.sh && echo "All checks pased!" || echo "Failures found"

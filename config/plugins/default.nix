@@ -10,6 +10,7 @@
     ./telescope.nix
     ./tree-sitter.nix
     ./nvim-tree.nix
+    ./fzf.nix
   ];
 
   # Use this to build default plugins either only in nixpkgs, or build then using
