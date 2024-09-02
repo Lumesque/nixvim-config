@@ -8,3 +8,4 @@ for i in $(/bin/ls $FILEDIR/ | grep -v "default.nix"); do
 done
 
 [ -n "$unfound_strings" ] && echo "Could not find ${unfound_strings:0:-1} in $DEFAULT_FILE" >&2 && exit 1
+exit 0

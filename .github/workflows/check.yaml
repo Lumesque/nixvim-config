@@ -4,4 +4,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: ./_checks/plugins_used.sh && echo "All checks pased!" || echo "Failures found"
+      - uses: actions/checkout@v2
+      - name: Run plugins used script
+        run: |
+          ./_checks/plugins_used.sh && echo "All checks pased!" || echo "Failures found"
+        shell: bash
