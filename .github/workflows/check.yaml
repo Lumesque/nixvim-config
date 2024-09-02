@@ -7,5 +7,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run plugins used script
         run: |
-          ./_checks/plugins_used.sh && echo "All checks pased!" || echo "Failures found"
+          ./_checks/plugins_used.sh
         shell: bash
