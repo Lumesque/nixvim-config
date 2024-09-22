@@ -2,16 +2,19 @@
   plugins.lualine = {
     enable = true;
 
-    globalstatus = true;
+    settings = {
+      sections = {
+        lualine_a = ["mode"];
+        lualine_b = ["branch"];
+        lualine_c = ["filename" "diff"];
 
-    sections = {
-      lualine_a = ["mode"];
-      lualine_b = ["branch"];
-      lualine_c = ["filename" "diff"];
-
-      lualine_x = [
-        "diagnostics"
-      ];
+        lualine_x = [
+          "diagnostics"
+        ];
+      };
+      options = {
+        globalstatus = true;
+      };
     };
   };
 }
