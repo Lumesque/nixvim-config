@@ -10,6 +10,7 @@
     ./telescope.nix
     ./tree-sitter.nix
     ./nvim-tree.nix
+    ./webdevicons.nix
     ./fzf.nix
   ];
 
@@ -22,7 +23,7 @@
   plugins = {
     nvim-autopairs.enable = true;
 
-    nvim-colorizer = {
+    colorizer = {
       enable = true;
     };
 

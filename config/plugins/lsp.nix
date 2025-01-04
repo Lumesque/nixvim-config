@@ -19,10 +19,10 @@
     };
 
     servers = {
-      lua-ls.enable = true;
+      lua_ls.enable = true;
       bashls.enable = true;
       gopls.enable = true;
-      rust-analyzer = {
+      rust_analyzer = {
         enable = true;
         installRustc = false;
         installCargo = false;
@@ -33,6 +33,12 @@
         settings.plugins.flake8.enabled = true;
       };
       nixd.enable = true;
+      tailwindcss.enable = true;
+      svelte.enable = true;
+      vuels = {
+        enable = true;
+        package = null;
+      };
     };
   };
 }
